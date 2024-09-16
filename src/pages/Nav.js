@@ -1,14 +1,13 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import UseFetchApi from '../tasks/UseFetchApi';
+import FormHandling from '../tasks/FormHandling';
 
 const Nav = () => {
+    
     return (
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-4'>
+                    {/* <div className='col-md-4'>
                         <UseFetchApi />
                         <Card className="text-center task_card">
                             <Card.Header>Featured</Card.Header>
@@ -21,7 +20,9 @@ const Nav = () => {
                             </Card.Body>
                             <Card.Footer className="text-muted">2 days ago</Card.Footer>
                         </Card>
-                    </div>
+                    </div> */}
+                    {/* <UserList /> */}
+                    <FormHandling />
                 </div>
             </div>
         </div>
