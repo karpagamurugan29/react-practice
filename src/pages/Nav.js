@@ -1,12 +1,14 @@
 import React from 'react';
-import FormHandling from '../tasks/FormHandling';
+import JsProblemSolving from '../tasks/JsProblemSolving';
+// import FormHandling from '../tasks/FormHandling';
 
 const Nav = () => {
-    
+
     return (
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
+                    <JsProblemSolving />
                     {/* <div className='col-md-4'>
                         <UseFetchApi />
                         <Card className="text-center task_card">
@@ -22,7 +24,12 @@ const Nav = () => {
                         </Card>
                     </div> */}
                     {/* <UserList /> */}
-                    <FormHandling />
+                    {/* <FormHandling /> */}
+                    {/* <FindMissingNumbers /> */}
+                    {/* <MergeIntervals /> */}
+                    {/* <RepeatingChar /> */}
+                    {/* <ArrayManipulation /> */}
+                    {/* <DynamicFormValidation /> */}
                 </div>
             </div>
         </div>
