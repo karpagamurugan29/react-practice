@@ -193,11 +193,52 @@ const JsProblemSolving = () => {
         for (let i = 0; i < value?.length; i++) {
             total *= value[i]
         }
-        console.log(total)
+        return total
     }
 
     const RemoveDuplicateString = (value) => {
         return [...new Set(value)]
+    }
+
+    const EachNumberSquared = (value) => {
+        let tempSquared = []
+        for (let i = 0; i < value?.length; i++) {
+            tempSquared?.push(value[i] * value[i])
+        }
+        return (tempSquared)
+    }
+
+    const SumOfAllOddNumbers = (value) => {
+        let sumValue = []
+        for (let i = 0; i < value?.length; i++) {
+            if (value[i] % 2 !== 0) {
+                sumValue.push(value[i])
+            }
+        }
+        return sumValue.reduce((a, b) => a + b, 0)
+    }
+
+    const LongestStringTheArray = (value) => {
+        let logString = ''
+        for (let chr of value) {
+            if (logString?.length < chr?.length) {
+                logString = chr
+            }
+        }
+        return (logString)
+    }
+    const findIntersection = (arr1, arr2) => {
+        let result = ''
+        arr1?.map((el) => {
+            if (arr2.includes(el)) {
+                result = el
+            }
+        })
+        return (result)
+    }
+
+    const mergeSortedArrays = (arr1, arr2) => {
+        return arr1?.concat(arr2)?.sort((a, b) => a - b)
     }
 
     return (
@@ -220,6 +261,11 @@ const JsProblemSolving = () => {
             vowels : {vowels('javascript')}<br />
             product of all numbers : {ProductOfallNumbers([1, 2, 3, 4])}<br />
             remove duplicate string : {RemoveDuplicateString('banana')}<br />
+            each number squared : {EachNumberSquared([1, 2, 3, 4])}<br />
+            sum of all odd numbers : {SumOfAllOddNumbers([1, 2, 3, 4, 5])}<br />
+            longest string from the array : {LongestStringTheArray(["apple", "banana", "cherry", "blueberry"])}<br />
+            present in both arrays : {findIntersection([1, 2, 3, 4], [2, 4, 6, 8])}
+            merge Sorted Arrays : {mergeSortedArrays([1, 3, 5], [2, 4, 6])}
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import JsProblemSolving from '../tasks/JsProblemSolving';
-// import FormHandling from '../tasks/FormHandling';
+import ReactProblemSolving from '../tasks/ReactProblemSolving';
 
 const Nav = () => {
 
@@ -8,7 +7,9 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <JsProblemSolving />
+                    <ReactProblemSolving />
+                    {/* <TcsQa /> */}
+                    {/* <JsProblemSolving /> */}
                     {/* <div className='col-md-4'>
                         <UseFetchApi />
                         <Card className="text-center task_card">
