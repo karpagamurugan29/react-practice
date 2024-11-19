@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactProblemSolving from '../tasks/ReactProblemSolving';
+import JavaScriptProblems from '../tasks/JavaScriptProblems';
 
 const Nav = () => {
 
@@ -7,7 +7,9 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <ReactProblemSolving />
+                    <JavaScriptProblems />
+                    {/* <Content /> */}
+                    {/* <ReactProblemSolving /> */}
                     {/* <TcsQa /> */}
                     {/* <JsProblemSolving /> */}
                     {/* <div className='col-md-4'>

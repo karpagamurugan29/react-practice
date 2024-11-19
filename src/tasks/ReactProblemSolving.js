@@ -105,24 +105,38 @@ const ReactProblemSolving = () => {
         let error = ''
         try {
             const response = await fetch(api)
-            console.log('response',response)
+            // console.log('response', response)
             if (response.ok) {
                 let result = await response.json()
-                console.log('ok')
+                // console.log('ok')
                 tempData = result
                 loading = false
             } else {
-                console.log('error')
+                // console.log('error')
             }
 
         } catch (err) {
             error = 'catch error'
         }
-        console.log(tempData, loading, error)
+        // console.log(tempData, loading, error)
         // return (data, loading, error)
     }
 
     const { data, loading, error } = FetchingData(`https://dummyjson.com/`)
+
+
+    const FindMissingNumber = (val) => {
+        let tempNum = ''
+        let missingNum = val?.forEach((el, ind) => {
+            console.log(el , ind + 1)
+            if (ind + 1 === el) {
+             return  ind + 1
+            }else return ''
+        })
+
+        console.log(tempNum)
+    }
+
 
     return (
         <div>
@@ -136,7 +150,7 @@ const ReactProblemSolving = () => {
             {
                 loading ? <div>Loading</div> : <div> {data?.map((el) => <div>{el?.firstName}</div>)}</div>
             }
-
+            Find the Missing Number : {FindMissingNumber([1, 2, 4, 5])}
         </div>
     )
 }
