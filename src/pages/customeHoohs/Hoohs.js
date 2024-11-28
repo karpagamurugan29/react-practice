@@ -1,10 +1,11 @@
 import React from 'react'
-import UseReduce from './UseReduce'
+import UseCallBack from './UseCallBack'
 
 const Hoohs = () => {
     return (
         <div>
-            Use Reducer : {<UseReduce />}
+            UseCallBack : {<UseCallBack />}
+            {/* Use Reducer : {<UseReduce />} */}
             {/* useContext :  <UseContext /> */}
             {/* Dynamic Form :  <DynamicForm /> */}
         </div>
