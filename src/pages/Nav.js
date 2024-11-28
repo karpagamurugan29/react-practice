@@ -1,5 +1,5 @@
 import React from 'react';
-import JavaScriptProblems from '../tasks/JavaScriptProblems';
+import Hoohs from './customeHoohs/Hoohs';
 
 const Nav = () => {
 
@@ -7,7 +7,11 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <JavaScriptProblems />
+                    <Hoohs/>
+                    {/* <ArrayMethods /> */}
+                    {/* <CustomeHooks /> */}
+                    {/* <StringAndArrayMethod /> */}
+                    {/* <JavaScriptProblems /> */}
                     {/* <Content /> */}
                     {/* <ReactProblemSolving /> */}
                     {/* <TcsQa /> */}
