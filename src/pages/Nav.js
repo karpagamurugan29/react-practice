@@ -1,5 +1,5 @@
 import React from 'react';
-import Hoohs from './customeHoohs/Hoohs';
+import DragAndDrop from './customeHoohs/DragAndDrop';
 
 const Nav = () => {
 
@@ -7,7 +7,20 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <Hoohs/>
+                    <DragAndDrop />
+                    {/* <DeBounceFilter /> */}
+                    {/* <DynamicForm /> */}
+                    {/* <ToDoList /> */}
+                    {/* <SearchableList /> */}
+                    {/* <PaginatedList /> */}
+                    {/* <InfiniteScroll/> */}
+                    {/* <DebouncedInput
+                        delay={500}
+                        onChange={(value) => console.log(value)}
+                        placeholder="Type something..."
+                    /> */}
+                    {/* <Dashboard /> */}
+                    {/* <Hoohs/> */}
                     {/* <ArrayMethods /> */}
                     {/* <CustomeHooks /> */}
                     {/* <StringAndArrayMethod /> */}

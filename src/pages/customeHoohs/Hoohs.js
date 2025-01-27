@@ -1,10 +1,13 @@
 import React from 'react'
-import UseCallBack from './UseCallBack'
+import UseLayoutEffect from './UseLayoutEffect'
 
 const Hoohs = () => {
     return (
         <div>
-            UseCallBack : {<UseCallBack />}
+            UseLayoutEffect : <UseLayoutEffect />
+            {/* Use Ref : {<UseRef />} */}
+            {/* Use Memo : {<UseMemo />} */}
+            {/* UseCallBack : {<UseCallBack />} */}
             {/* Use Reducer : {<UseReduce />} */}
             {/* useContext :  <UseContext /> */}
             {/* Dynamic Form :  <DynamicForm /> */}
