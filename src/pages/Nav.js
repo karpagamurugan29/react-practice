@@ -1,5 +1,5 @@
 import React from 'react';
-import TaskDragAndDrop from './customeHoohs/TaskDragAndDrop';
+import InfiniteScroll from './interView/InfiniteScroll';
 
 const Nav = () => {
 
@@ -7,7 +7,11 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <TaskDragAndDrop />
+                    <InfiniteScroll />
+                    {/* <LazyLoadedImage /> */}
+                    {/* <DebouncedValue/> */}
+                    {/* <FormContext /> */}
+                    {/* <TaskDragAndDrop /> */}
                     {/* <DragAndDrop /> */}
                     {/* <DeBounceFilter /> */}
                     {/* <DynamicForm /> */}
