@@ -31,3 +31,6 @@
     padding: 10px;
     overflow-y: scroll;
 } */
+ .error-message{
+    color: red;
+ }

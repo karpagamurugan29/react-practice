@@ -1,13 +1,41 @@
-import React from 'react';
-import InfiniteScroll from './interView/InfiniteScroll';
+import React, { useEffect, useState } from 'react';
+import { JsProblems } from './JsProblemSolving/JsProblems';
+import { ProblemSolving } from './ProblemSolving';
+import { ReactProblems } from './ReactProblems';
+import { JsMay23 } from './JsProblemSolving/JsMay23';
+import SearchInput from './hooks/SearchInput';
+import { TodoList } from './components/TodoList';
+import { DynamicForm } from '../tasks/practice/DynamicForm';
+import { Wizard } from '../tasks/practice/Wizard';
+import { TagInput } from '../tasks/practice/TagInput';
+import { FilterableSortableUserList } from '../tasks/practice/FilterableSortableUserList';
+import { ControlledLogin } from './reactCustomeHook/ControlledLogin';
+import { UncontrolledLogin } from './reactCustomeHook/ UncontrolledLogin';
+import { TodoListUseReducer } from './reactCustomeHook/TodoListUseReducer';
+import { SearchableListComponent } from '../tasks/knowledgeTest/SearchableListComponent';
+// import { UseFetch } from '../tasks/practice/UseFetch';
 
 const Nav = () => {
-
     return (
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <InfiniteScroll />
+                    <SearchableListComponent />
+                    {/* <TodoListUseReducer /> */}
+                    {/* <UncontrolledLogin /> */}
+                    {/* <ControlledLogin /> */}
+                    {/* <FilterableSortableUserList /> */}
+                    {/* <TagInput/> */}
+                    {/* <UseFetch /> */}
+                    {/* <Wizard /> */}
+                    {/* <TodoList /> */}
+                    {/* <DynamicForm formConfig={formConfig} onSubmit={(data) => console.log(data)} /> */}
+                    {/* <SearchInput onSearch={((el) => console.log('render', el))} /> */}
+                    {/* <JsMay23 /> */}
+                    {/* <ReactProblems /> */}
+                    {/* <ProblemSolving /> */}
+                    {/* <JsProblems /> */}
+                    {/* <InfiniteScroll /> */}
                     {/* <LazyLoadedImage /> */}
                     {/* <DebouncedValue/> */}
                     {/* <FormContext /> */}
