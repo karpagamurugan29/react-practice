@@ -37,7 +37,7 @@ export default function SimpleFilter() {
 
             {filters.map((f, i) => {
                 const field = fields.find(x => x.key === f.field);
-
+console.log('field',field)
                 return (
                     <div className="row g-2 align-items-center mb-2" key={i}>
                         {/* Field */}
