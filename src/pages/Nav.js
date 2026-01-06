@@ -19,6 +19,7 @@ import { CounterButton } from './codingChallenge/CounterButton';
 import { Dashboard } from './codingChallenge/Dashboard';
 import { UseFetchApi } from './codingChallenge/UseFetchApi';
 import CodingTest from './CodingTest/CodingTest';
+import SimpleFilter from './Assesment/SimpleFilter.tsx';
 // import { UseFetch } from '../tasks/practice/UseFetch';
 
 const Nav = () => {
@@ -26,7 +27,7 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <CodingTest />
+                    <SimpleFilter />
                     {/* <DynamicForm /> */}
                     {/* <UseFetchApi /> */}
                     {/* <Dashboard /> */}
