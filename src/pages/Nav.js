@@ -5,7 +5,7 @@ import { ReactProblems } from './ReactProblems';
 import { JsMay23 } from './JsProblemSolving/JsMay23';
 import SearchInput from './hooks/SearchInput';
 import { TodoList } from './components/TodoList';
-import { DynamicForm } from '../tasks/practice/DynamicForm';
+import { DynamicForm } from '../pages/codingChallenge/DynamicForm';
 import { Wizard } from '../tasks/practice/Wizard';
 import { TagInput } from '../tasks/practice/TagInput';
 import { FilterableSortableUserList } from '../tasks/practice/FilterableSortableUserList';
@@ -13,6 +13,12 @@ import { ControlledLogin } from './reactCustomeHook/ControlledLogin';
 import { UncontrolledLogin } from './reactCustomeHook/ UncontrolledLogin';
 import { TodoListUseReducer } from './reactCustomeHook/TodoListUseReducer';
 import { SearchableListComponent } from '../tasks/knowledgeTest/SearchableListComponent';
+import DebouncedInput from './codingChallenge/DebouncedInput';
+import { Zoho } from './MNC/Zoho';
+import { CounterButton } from './codingChallenge/CounterButton';
+import { Dashboard } from './codingChallenge/Dashboard';
+import { UseFetchApi } from './codingChallenge/UseFetchApi';
+import CodingTest from './CodingTest/CodingTest';
 // import { UseFetch } from '../tasks/practice/UseFetch';
 
 const Nav = () => {
@@ -20,7 +26,14 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <SearchableListComponent />
+                    <CodingTest />
+                    {/* <DynamicForm /> */}
+                    {/* <UseFetchApi /> */}
+                    {/* <Dashboard /> */}
+                    {/* <CounterButton /> */}
+                    {/* <Zoho /> */}
+                    {/* <DebouncedInput /> */}
+                    {/* <SearchableListComponent /> */}
                     {/* <TodoListUseReducer /> */}
                     {/* <UncontrolledLogin /> */}
                     {/* <ControlledLogin /> */}
