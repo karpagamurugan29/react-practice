@@ -20,6 +20,8 @@ import { Dashboard } from './codingChallenge/Dashboard';
 import { UseFetchApi } from './codingChallenge/UseFetchApi';
 import CodingTest from './CodingTest/CodingTest';
 import SimpleFilter from './Assesment/SimpleFilter.tsx';
+import JobList from './TS/JobList.tsx';
+import { Tasks } from './React/Tasks.js';
 // import { UseFetch } from '../tasks/practice/UseFetch';
 
 const Nav = () => {
@@ -27,7 +29,9 @@ const Nav = () => {
         <div className='task_list_sec'>
             <div className='container'>
                 <div className='row'>
-                    <SimpleFilter />
+                    <Tasks/>
+                    {/* <JobList/> */}
+                    {/* <SimpleFilter /> */}
                     {/* <DynamicForm /> */}
                     {/* <UseFetchApi /> */}
                     {/* <Dashboard /> */}
